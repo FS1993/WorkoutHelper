@@ -1,0 +1,9 @@
+{% extends 'helper/base.html' %}
+{% block content %}
+<form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Usuń ćwiczenie</button>
+    <br><a href="http://127.0.0.1:8000/login/helper/index.html/exercises.html">Powrót do bazy</a>
+</form>
+{% endblock %}

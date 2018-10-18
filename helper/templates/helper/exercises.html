@@ -1,0 +1,8 @@
+{% extends 'helper/base.html' %}
+{% block content %}
+{% for x in exercises %}
+id: {{ x.id }} <a href="helper/description.html/{{x.id}}">{{ x.name }}</a> {{ x.reps }}<br>
+{% endfor %}
+<a href="add_exercise.html">Dodaj ćwiczenie</a><br>
+<a href="delete_exercise.html">Usuń ćwiczenie</a>
+{% endblock %}

@@ -1,0 +1,7 @@
+{% extends 'helper/base.html' %}
+{% block content %}
+    {% for x in exercises %}
+
+       {{ x.name }} {{ x.reps }}<br>
+    {% endfor %}
+{% endblock %}

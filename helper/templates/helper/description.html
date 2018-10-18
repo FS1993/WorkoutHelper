@@ -1,0 +1,8 @@
+{% extends 'helper/base.html' %}
+{% block content %}
+
+    {{ exercise.description }}<br>
+    Poziom: {{ exercise.level}}<br>
+    Ćwiczona partia: {{ exercise.category}}
+<br><a href="http://127.0.0.1:8000/login/helper/index.html/exercises.html">Powrót do bazy</a>
+{% endblock %}

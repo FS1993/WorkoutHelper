@@ -1,0 +1,17 @@
+{% extends 'helper/base.html' %}
+{% block content %}
+<form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <!--<label for="username">Nazwa: </label>-->
+    <!--<input id="username" type="text" name="username" value="{{ current_name }}">-->
+
+    <!--<label for="password">Hasło: </label>-->
+    <!--<input id="password" type="password" name="password" value="{{ current_password }}">-->
+
+    <!--<label for="email">Email: </label>-->
+    <!--<input id="email" type="email" name="email" value="{{ current_email }}">-->
+
+    <button type="submit" value="Wyślij">Register</button>
+</form>
+{% endblock %}

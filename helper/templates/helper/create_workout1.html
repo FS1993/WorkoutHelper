@@ -1,0 +1,22 @@
+{% extends 'helper/base.html' %}
+{% block content %}
+<form method="POST">
+    {% csrf_token %}
+{{ form.as_p }}
+<button type="submit" value="Wygeneruj">Wygeneruj trening</button>
+<!--<form>-->
+    <!--<label>Poziom zaawansowania</label>-->
+	<!--<select name="Poziom Zaawansowania">-->
+		<!--<option>Początkujący</option>-->
+		<!--<option>Średniozaawansowany</option>-->
+        <!--<option>Zaawansowany</option>-->
+	<!--</select><br>-->
+    <!--<label>Ćwiczona partia</label>-->
+	<!--<select name="Ćwiczona partia">-->
+		<!--<option>Ręce</option>-->
+		<!--<option>Nogi</option>-->
+        <!--<option>Core</option>-->
+	<!--</select><br>-->
+    <!--<button type="submit">Stwórz trening</button>-->
+</form>
+{% endblock %}
